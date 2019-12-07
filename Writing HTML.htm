@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!-- saved from url=(0086)https://www.learnhowtoprogram.com/workshops/intro-to-programming-workshop/writing-html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Writing HTML</title>
+
+<script type="text/javascript" src="./Writing HTML_files/48356a79ca"></script><script src="./Writing HTML_files/nr-1153.min.js"></script><script type="text/javascript" async="" src="./Writing HTML_files/loader.js"></script><script type="text/javascript" async="" src="./Writing HTML_files/aa1422f9-9ca9-4942-8b1c-830007020e3d.js"></script><script async="" src="./Writing HTML_files/analytics.js"></script><script src="./Writing HTML_files/Gy5a6AgvmvRZuSjIcKRIBTwX4nQ.js"></script><script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"48356a79ca","applicationID":"1386295","transactionName":"IAwPEhQNWVxUFx5VUBAQDggVTUZYXhI=","queueTime":5,"applicationTime":52,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).loader_config={licenseKey:"48356a79ca",applicationID:"1386295"};window.NREUM||(NREUM={}),__nr_require=function(n,e,t){function r(t){if(!e[t]){var i=e[t]={exports:{}};n[t][0].call(i.exports,function(e){var i=n[t][1][e];return r(i||e)},i,i.exports)}return e[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(n,e,t){function r(){}function i(n,e,t){return function(){return o(n,[u.now()].concat(f(arguments)),e?null:this,t),e?void 0:this}}var o=n("handle"),a=n(4),f=n(5),c=n("ee").get("tracer"),u=n("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(n,e){s[e]=i(d+e,!0,"api")}),s.addPageAction=i(d+"addPageAction",!0),s.setCurrentRouteName=i(d+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(n,e){var t={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),n,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return e.apply(this,arguments)}catch(n){throw c.emit("fn-err",[arguments,this,n],t),n}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(n,e){m[e]=i(l+e)}),newrelic.noticeError=function(n,e){"string"==typeof n&&(n=new Error(n)),o("err",[n,u.now(),!1,e])}},{}],2:[function(n,e,t){function r(n,e){var t=n.getEntries();t.forEach(function(n){"first-paint"===n.name?a("timing",["fp",Math.floor(n.startTime)]):"first-contentful-paint"===n.name&&a("timing",["fcp",Math.floor(n.startTime)])})}function i(n){if(n instanceof c&&!s){var e,t=Math.round(n.timeStamp);e=t>1e12?Date.now()-t:f.now()-t,s=!0,a("timing",["fi",t,{type:n.type,fid:e}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var o,a=n("handle"),f=n("loader"),c=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){o=new PerformanceObserver(r);try{o.observe({entryTypes:["paint"]})}catch(u){}}if("addEventListener"in document){var s=!1,p=["click","keydown","mousedown","pointerdown","touchstart"];p.forEach(function(n){document.addEventListener(n,i,!1)})}}},{}],3:[function(n,e,t){function r(n,e){if(!i)return!1;if(n!==i)return!1;if(!e)return!0;if(!o)return!1;for(var t=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],4:[function(n,e,t){function r(n,e){var t=[],r="",o=0;for(r in n)i.call(n,r)&&(t[o]=e(r,n[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],5:[function(n,e,t){function r(n,e,t){e||(e=0),"undefined"==typeof t&&(t=n?n.length:0);for(var r=-1,i=t-e||0,o=Array(i<0?0:i);++r<i;)o[r]=n[e+r];return o}e.exports=r},{}],6:[function(n,e,t){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(n,e,t){function r(){}function i(n){function e(n){return n&&n instanceof r?n:n?c(n,f,o):o()}function t(t,r,i,o){if(!d.aborted||o){n&&n(t,r,i);for(var a=e(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(n,e){h[n]=v(n).concat(e)}function m(n,e){var t=h[n];if(t)for(var r=0;r<t.length;r++)t[r]===e&&t.splice(r,1)}function v(n){return h[n]||[]}function g(n){return p[n]=p[n]||i(t)}function w(n,e){u(n,function(n,t){e=e||"feature",y[t]=e,e in s||(s[e]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:e,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var f="nr@context",c=n("gos"),u=n(4),s={},p={},d=e.exports=i();d.backlog=s},{}],gos:[function(n,e,t){function r(n,e,t){if(i.call(n,e))return n[e];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(n,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return n[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(n,e,t){function r(n,e,t,r){i.buffer([n],r),i.emit(n,e,t)}var i=n("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(n,e,t){function r(n){var e=typeof n;return!n||"object"!==e&&"function"!==e?-1:n===window?0:a(n,o,function(){return i++})}var i=1,o="nr@id",a=n("gos");e.exports=r},{}],loader:[function(n,e,t){function r(){if(!x++){var n=E.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(n&&n.licenseKey&&n.applicationID&&e))return s.abort();u(y,function(e,t){n[e]||(n[e]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=l.createElement("script");t.src="https://"+n.agent,e.parentNode.insertBefore(t,e)}}function i(){"complete"===l.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=n("handle"),u=n(4),s=n("ee"),p=n(3),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1153.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=e.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};n(1),n(2),l[m]?(l[m]("DOMContentLoaded",o,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",i),d[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=n(6)},{}],"wrap-function":[function(n,e,t){function r(n){return!(n&&n instanceof Function&&n.apply&&!n[a])}var i=n("ee"),o=n(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;e.exports=function(n,e){function t(n,e,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){d([u,"",[r,a,i],f])}s(e+"start",[r,a,i],f);try{return c=n.apply(a,r)}catch(p){throw s(e+"err",[r,a,p],f),p}finally{s(e+"end",[r,a,c],f)}}return r(n)?n:(e||(e=""),nrWrapper[a]=n,p(n,nrWrapper),nrWrapper)}function u(n,e,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<e.length;c++)f=e[c],a=n[f],r(a)||(n[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||e){var o=c;c=!0;try{n.emit(t,r,i,e)}catch(a){d([a,t,r,i])}c=o}}function p(n,e){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(n);return t.forEach(function(t){Object.defineProperty(e,t,{get:function(){return n[t]},set:function(e){return n[t]=e,e}})}),e}catch(r){d([r])}for(var i in n)f.call(n,i)&&(e[i]=n[i]);return e}function d(e){try{n.emit("internal-error",e)}catch(t){}}return n||(n=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="zdfddNR4Jw0aX+5psxTNh1hQsjv8oSTpFG71tEQ6NePmuEJCnryXjbrzUKDTqQMAg7C9P2UgIUgW8bpHBK1fuw==">
+<link rel="stylesheet" media="all" href="./Writing HTML_files/application-74095f2d1adb3757b95eedacb3ca3e99de85bd1a5905700b945252f74fa1fb0e.css">
+<link rel="shortcut icon" type="image/x-icon" href="https://www.learnhowtoprogram.com/assets/favicon-d0e8ff63da72a0c5ea15ebc045a7f9d2979d211a12e596a5ed5f5b1534e78919.png">
+<link href="./Writing HTML_files/css" rel="stylesheet" type="text/css">
+<script src="./Writing HTML_files/application-87ffa99e14cef3d1aa4b9b1b85f7e96ddea38bf6bcbb2c7edbca0d6ae2247439.js"></script>
+<style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></head>
+<body>
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<span class="label label-info">Lesson</span>
+<span class="label label-primary">Weekend</span>
+<ul class="breadcrumb">
+<li><a href="https://www.learnhowtoprogram.com/workshops">Workshops</a></li>
+<li><a href="https://www.learnhowtoprogram.com/workshops/intro-to-programming-workshop">Intro to Programming Workshop</a></li>
+<li class="active">Writing HTML</li>
+</ul>
+<ul class="nav nav-tabs">
+<li class="active"><a href="https://www.learnhowtoprogram.com/workshops/intro-to-programming-workshop/writing-html#text" data-toggle="tab">Text</a></li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane active in" id="text">
+<p>In the previous lesson, we created our project's directory along with our first file. Next, let's begin creating our actual website using <strong>HTML</strong>.</p>
+<p></p><hr><p></p>
+<h3>Writing HTML</h3>
+<p>In the last lesson, we opened our project with <code class="prettyprint prettyprinted" style=""><span class="pln">atom </span><span class="pun">.</span></code>. This will open an Atom screen with a pane on the left side that shows our project files. Right now, the only file we have is <code class="prettyprint prettyprinted" style=""><span class="pln">index</span><span class="pun">.</span><span class="pln">html</span></code>.</p>
+<p><img src="./Writing HTML_files/directory_in_atom.png" alt="file-directory-in-atom"></p>
+<p>Open that file now. It's time to add some HTML!</p>
+<p><strong>HTML</strong> is the basic building block of the internet. HTML is used to display the basic content of every website you've ever visited.</p>
+<p>Read the following code and carefully type it into the <code class="prettyprint prettyprinted" style=""><span class="pln">index</span><span class="pun">.</span><span class="pln">html</span></code> file.</p>
+<div class="filename">index.html</div>
+<pre><code class="prettyprint lang-html prettyprinted" style=""><span class="dec">&lt;!DOCTYPE html&gt;</span><span class="pln">
+</span><span class="tag">&lt;html&gt;</span><span class="pln">
+  </span><span class="tag">&lt;head&gt;</span><span class="pln">
+    </span><span class="tag">&lt;title&gt;</span><span class="pln">Epicodus Workshop Project</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+  </span><span class="tag">&lt;/head&gt;</span><span class="pln">
+  </span><span class="tag">&lt;body&gt;</span><span class="pln">
+    </span><span class="tag">&lt;h1&gt;</span><span class="pln">My Programming Goals</span><span class="tag">&lt;/h1&gt;</span><span class="pln">
+  </span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></code></pre>
+<p>We are using several different element types here. Each element has two <strong>tags</strong>: an opening tag and a closing tag. Here is an example: <code class="prettyprint prettyprinted" style=""><span class="tag">&lt;html&gt;</span></code> and <code class="prettyprint prettyprinted" style=""><span class="tag">&lt;/html&gt;</span></code>. Tags are always enclosed in <code class="prettyprint prettyprinted" style=""><span class="pln">&lt;</span></code> and <code class="prettyprint prettyprinted" style=""><span class="pun">&gt;</span></code>. <code class="prettyprint prettyprinted" style=""><span class="tag">&lt;html&gt;</span></code> is an opening tag. <code class="prettyprint prettyprinted" style=""><span class="tag">&lt;/html&gt;</span></code> is a closing tag. Closing tags always include a <code class="prettyprint prettyprinted" style=""><span class="pun">/</span></code> after the <code class="prettyprint prettyprinted" style=""><span class="pln">&lt;</span></code>.</p>
+<p>Here are the tags we are using in the code above:</p>
+<ul>
+<li><code class="prettyprint prettyprinted" style=""><span class="tag">&lt;html&gt;</span></code> tells the browser that everything within it is HTML.</li>
+<li><code class="prettyprint prettyprinted" style=""><span class="tag">&lt;head&gt;</span></code> includes important information about the webpage that will not be displayed. For now we are just including a <code class="prettyprint prettyprinted" style=""><span class="tag">&lt;title&gt;</span></code>. We will cover other elements that go in <code class="prettyprint prettyprinted" style=""><span class="tag">&lt;head&gt;</span></code> soon.</li>
+<li><code class="prettyprint prettyprinted" style=""><span class="tag">&lt;body&gt;</span></code> contains information that will be displayed to the user. Most of the code we add will go in the body.</li>
+<li><code class="prettyprint prettyprinted" style=""><span class="tag">&lt;h1&gt;</span></code> is a header tag. There are headers 1-6 and they correspond to different text sizes.</li>
+</ul>
+<p>Next, we need to save our file. We can do this by pressing the <code class="prettyprint prettyprinted" style=""><span class="pln">alt </span><span class="pun">+</span><span class="pln"> S</span></code> keys on Epicodus keyboards or by selecting <em>File &gt; Save</em> in Atom. To open our webpage, go to the Terminal (the same window you used commands like <code class="prettyprint prettyprinted" style=""><span class="pln">touch</span></code> and <code class="prettyprint prettyprinted" style=""><span class="pln">mkdir</span></code> earlier) and enter the command <code class="prettyprint prettyprinted" style=""><span class="pln">open index</span><span class="pun">.</span><span class="pln">html</span></code>.</p>
+<p>Now we can see our page:</p>
+<p><img src="./Writing HTML_files/webpage_in_browser_1.png" alt="webpage-in-browser-1"></p>
+<p></p><hr><p></p>
+<h3>Expanding HTML</h3>
+<p>Let's add some more elements to our HTML. We'll start with another header. Follow along and match your HTML to the following code snippet. Note that we've limited the code snippet to the <code class="prettyprint prettyprinted" style=""><span class="tag">&lt;body&gt;</span></code> element for now. Also, each html document should have just one set of <code class="prettyprint prettyprinted" style=""><span class="pln">body</span></code> tags. The <code class="prettyprint prettyprinted" style=""><span class="pln">body</span></code> tags should "wrap around" the rest of the html code that isn't inside the <code class="prettyprint prettyprinted" style=""><span class="pln">head</span></code>.</p>
+<div class="filename">index.html</div>
+<pre><code class="prettyprint lang-html prettyprinted" style=""><span class="pln">...
+  </span><span class="tag">&lt;body&gt;</span><span class="pln">
+    </span><span class="tag">&lt;h1&gt;</span><span class="pln">My Programming Goals</span><span class="tag">&lt;/h1&gt;</span><span class="pln">
+    </span><span class="tag">&lt;p&gt;</span><span class="pln">Every journey is easier if you </span><span class="tag">&lt;strong&gt;</span><span class="pln">know where you're going.</span><span class="tag">&lt;/strong&gt;</span><span class="pln"> </span><span class="tag">&lt;em&gt;</span><span class="pln">-unknown</span><span class="tag">&lt;/em&gt;&lt;/p&gt;</span><span class="pln">
+  </span><span class="tag">&lt;/body&gt;</span><span class="pln">
+...</span></code></pre>
+<ul>
+<li>The <code class="prettyprint prettyprinted" style=""><span class="tag">&lt;p&gt;</span></code> element is a paragraph. This is the basic text element used in HTML. It's used to display most basic text to the user.</li>
+</ul>
+<p>Save the file and refresh the page in your browser. Note how the <code class="prettyprint prettyprinted" style=""><span class="tag">&lt;strong&gt;</span></code> and <code class="prettyprint prettyprinted" style=""><span class="tag">&lt;em&gt;</span></code> tags inside the paragraph element have changed the styling of our site. <code class="prettyprint prettyprinted" style=""><span class="pln">strong</span></code> tags add <strong>bold</strong> while <code class="prettyprint prettyprinted" style=""><span class="pln">em</span></code> tags add <em>italics</em>.</p>
+<p><img src="./Writing HTML_files/webpage_in_browser_2.png" alt="webpage-in-browser-2"></p>
+<p>Let's use a new element to display an image on our page.</p>
+<div class="filename">index.html</div>
+<pre><code class="prettyprint lang-html prettyprinted" style=""><span class="pln">...
+  </span><span class="tag">&lt;body&gt;</span><span class="pln">
+    </span><span class="tag">&lt;h1&gt;</span><span class="pln">My Programming Goals</span><span class="tag">&lt;/h1&gt;</span><span class="pln">
+    </span><span class="tag">&lt;p&gt;</span><span class="pln">Every journey is easier if you </span><span class="tag">&lt;strong&gt;</span><span class="pln">know where you're going.</span><span class="tag">&lt;/strong&gt;</span><span class="pln"> </span><span class="tag">&lt;em&gt;</span><span class="pln">-unknown</span><span class="tag">&lt;/em&gt;&lt;/p&gt;</span><span class="pln">
+
+    </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"https://tinyurl.com/lfkubwe"</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+
+  </span><span class="tag">&lt;/body&gt;</span><span class="pln">
+...</span></code></pre>
+<p>Here we've added an element called an <code class="prettyprint prettyprinted" style=""><span class="tag">&lt;img&gt;</span></code>. We can use this image to link to an image. Note that there is no closing tag <code class="prettyprint prettyprinted" style=""><span class="tag">&lt;/img&gt;</span></code> present. Instead the <code class="prettyprint prettyprinted" style=""><span class="pun">/</span></code> is located at the end of the element itself. This is called a self-closing element.</p>
+<p>This element has additional information included as well. It has an <strong>attribute</strong> called <code class="prettyprint prettyprinted" style=""><span class="pln">src</span></code>. This attribute defines the source of the image. In this case we're using a URL to show an image from the internet. You can replace this URL with another image if you'd prefer. Just copy and paste an image link inside the double quotation marks. You must always add quotation marks to an attribute. Any information about the attribute is included inside the quotation marks like the code example above.
+Save the file and refresh the page in your browser. Our webpage now includes an image.</p>
+<p><img src="./Writing HTML_files/webpage_in_browser_3.png" alt="webpage-with-image"></p>
+<p></p><hr><p></p>
+<h3>An HTML list</h3>
+<p>Let's create a list of goals below the image we're displaying. Add the following code below the <code class="prettyprint prettyprinted" style=""><span class="tag">&lt;img&gt;</span></code> element:</p>
+<div class="filename">index.html</div>
+<pre><code class="prettyprint lang-html prettyprinted" style=""><span class="pln">...
+</span><span class="tag">&lt;h3&gt;</span><span class="pln">My Goals:</span><span class="tag">&lt;/h3&gt;</span><span class="pln">
+</span><span class="tag">&lt;p&gt;</span><span class="pln">
+  I want to become a professional web developer. Here are the things I'll need to learn first.
+</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+</span><span class="tag">&lt;ul&gt;</span><span class="pln">
+  </span><span class="tag">&lt;li&gt;</span><span class="pln">Learn HTML</span><span class="tag">&lt;/li&gt;</span><span class="pln">
+  </span><span class="tag">&lt;li&gt;</span><span class="pln">Learn CSS</span><span class="tag">&lt;/li&gt;</span><span class="pln">
+</span><span class="tag">&lt;/ul&gt;</span><span class="pln">
+...</span></code></pre>
+<ul>
+<li><code class="prettyprint prettyprinted" style=""><span class="tag">&lt;ul&gt;</span></code> is an element that indicates we wish to display an un-ordered list. By default this means we'll display bullet points.</li>
+<li><code class="prettyprint prettyprinted" style=""><span class="tag">&lt;li&gt;</span></code> is a list item. When displayed within a list, they will be grouped together.</li>
+</ul>
+<p>When we reload, we see our list neatly displayed under the image.</p>
+<p><img src="./Writing HTML_files/Screen Shot 2017-04-07 at 3.26.25 PM.png" alt="list-in-webpage"></p>
+<p></p><hr><p></p>
+<h3>Hyperlinks</h3>
+<p>Let's add one more element to our page. No website would be complete without links. They're important for linking pages together and providing references to external sites.</p>
+<p>Let's add the following code to the <em>index.html</em> file.</p>
+<div class="filename">index.html</div>
+<pre><code class="prettyprint lang-html prettyprinted" style=""><span class="pln">...
+</span><span class="tag">&lt;h3&gt;</span><span class="pln">My favorite website</span><span class="tag">&lt;/h3&gt;</span><span class="pln">
+</span><span class="tag">&lt;h4&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"http://www.google.com"</span><span class="tag">&gt;</span><span class="pln">Google</span><span class="tag">&lt;/a&gt;&lt;/h4&gt;</span><span class="pln">
+...</span></code></pre>
+<p>Here we've used another set of header elements and a new element called an <strong>anchor</strong>. The anchor is defined with the <code class="prettyprint prettyprinted" style=""><span class="tag">&lt;a&gt;</span></code> element. Notice that the anchor has an <strong>attribute</strong> just like an image. The <code class="prettyprint prettyprinted" style=""><span class="pln">href</span></code> attribute is the hypertext reference. If a user clicks on the link, the <code class="prettyprint prettyprinted" style=""><span class="pln">href</span></code> declares the site where the user will end up. Here's how our site should look now:</p>
+<p><img src="./Writing HTML_files/webpage_after_html_lesson.png" alt="site-after-completion-of-html-lesson"></p>
+<p>Our basic site now has basic elements including a header, paragraph element, an image, a list, and a hyperlink. In the next lesson, we'll add styling with CSS.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="https://www.learnhowtoprogram.com/tracks">Tracks</a>
+</div>
+<div id="navbar" class="collapse navbar-collapse">
+<ul class="nav navbar-nav">
+<li> </li><li><a href="https://www.learnhowtoprogram.com/workshops/intro-to-programming-workshop/welcome">Previous</a></li>
+<li><a href="https://www.learnhowtoprogram.com/workshops/intro-to-programming-workshop/styling-css">Next</a></li>
+
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li id="navbar-search">
+<form class="navbar-form navbar-left" action="https://www.learnhowtoprogram.com/lessons" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
+<div class="input-group">
+<input type="text" name="search" id="search" placeholder="Search lessons" class="form-control">
+<div class="input-group-btn">
+<button name="button" type="submit" class="btn btn-info" id="lesson-search">
+<span class="glyphicon glyphicon-search"></span>
+</button> </div>
+</div>
+</form> </li>
+</ul>
+</div>
+</div>
+</nav>
+<footer class="footer">
+<div class="container">
+<a href="http://www.epicodus.com/" target="_blank"><img id="epicodus-logo" src="./Writing HTML_files/saved_resource" title="Learn to program at Epicodus" alt="Learn to program at Epicodus"></a>
+<p>© 2019 <a href="http://www.epicodus.com/">Epicodus</a>, Inc.</p>
+</div>
+</footer>
+
+<script type="text/javascript">
+      var _usersnapconfig = { loadHandler: function() {UserSnap.on('beforeSend', function(obj) { obj.label = "Workshops"; }) } };
+      (function() { var s = document.createElement("script"); s.type = "text/javascript"; s.async = true; s.src = '//api.usersnap.com/load/aa1422f9-9ca9-4942-8b1c-830007020e3d.js';
+      var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); })();
+    </script>
+
+
+
+<!--uspssb--><iframe src="./Writing HTML_files/saved_resource.html" name="us-entrypoint-setup" style="display: none; height: 0px; width: 0px; z-index: 2147483647;"></iframe><!--uspsse--><!--uspssb--><iframe src="./Writing HTML_files/saved_resource(1).html" name="us-entrypoint-button" class="us–style-manager-1buttonIframe1575744007205 us–style-manager-2sizedIframe1575744007205" id="us–style-manager-1buttonIframe1575744007205" style="display: none; height: 0px; width: 0px; z-index: 2147483647;"></iframe><!--uspsse--><style type="text/css"></style><style type="text/css"></style></body></html>
